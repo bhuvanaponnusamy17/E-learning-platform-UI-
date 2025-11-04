@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate</title>
+  <style>
+    body { font-family: Georgia, serif; text-align: center; padding: 50px; }
+    h1 { color: #4f46e5; }
+    .box { border: 3px solid #4f46e5; padding: 40px; border-radius: 15px; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🏅 Certificate of Completion</h1>
+    <p>This certifies that</p>
+    <h2><em>Student Name</em></h2>
+    <p>has successfully completed the course</p>
+    <h3 id="courseName">Course Title</h3>
+    <p><em>Date: <span id="date"></span></em></p>
+  </div>
+
+  <script>
+    document.getElementById("date").innerText = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
